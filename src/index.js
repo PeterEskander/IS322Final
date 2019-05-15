@@ -11,4 +11,4 @@ import Application from './components/application';
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 const store = createStoreWithMiddleware(reducers);
 
-ReactDOM.render(<Provider store={store}><Application /></Provider>, document.querySelector('.container'));
+ReactDOM.render(<Provider store={store}><Application /></Provider>, document.querySelector('#root'));
