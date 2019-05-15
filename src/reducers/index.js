@@ -7,5 +7,5 @@ function videos(state = [], action) {
   return state;
 }
 
-const reducers = combineReducers({videos: videos});
+const reducers = combineReducers({videos: videos})
 export default reducers;

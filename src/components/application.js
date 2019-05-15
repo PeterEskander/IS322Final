@@ -31,24 +31,24 @@ class Application extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-12">
-            <SearchBar onSearchTerm={this.search.bind(this)} />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <SearchBar onSearchTerm={this.search.bind(this)} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-8">
+              <Detail video={this.state.selectedVideo} />
+            </div>
+            <div className=".col-md-4">
+              <List
+                  videos={this.props.videos}
+                  onVideoSelect={(selectedVideo) => this.onVideoSelect(selectedVideo)}
+              />
+            </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-8">
-            <Detail video={this.state.selectedVideo} />
-          </div>
-          <div className=".col-md-4">
-            <List
-              videos={this.props.videos}
-              onVideoSelect={(selectedVideo) => this.onVideoSelect(selectedVideo)}
-            />
-          </div>
-        </div>
-      </div>
     );
   }
 }
