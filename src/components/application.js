@@ -31,11 +31,6 @@ class Application extends Component {
   }
 
   render() {
-    const divStyle={
-      backgroundColor: 'red',
-      size: '100%',
-      height: '30%',
-    };
 
 
     return (
@@ -46,7 +41,7 @@ class Application extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-8" style={divStyle}>
+            <div className="col-md-8">
               <Detail video={this.state.selectedVideo} />
             </div>
             <div className=".col-md-4">

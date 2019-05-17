@@ -5,11 +5,12 @@ const Item = ({video, onVideoSelect}) => {
     const snippet = video.snippet;
     const imageUrl = snippet.thumbnails.default.url;
 
+
     return (
         <li className="media" onClick={() => onVideoSelect(video)}>
             <div className="media-left">
                 <a href="#">
-                    <img className="media-object" src={imageUrl} alt="{title}" />
+                    <img className="media-object" src={imageUrl} alt="{title}"/>
                 </a>
             </div>
             <div className="media-body">
