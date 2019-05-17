@@ -6,6 +6,7 @@ import { fetchTube } from '../actions/index';
 import SearchBar from './search_bar';
 import List from './list';
 import Detail from './detail'
+import { style } from 'react-bootstrap';
 
 class Application extends Component {
   constructor(props) {
@@ -30,6 +31,13 @@ class Application extends Component {
   }
 
   render() {
+    const divStyle={
+      backgroundColor: 'red',
+      size: '100%',
+      height: '30%',
+    };
+
+
     return (
         <div className="container-fluid">
           <div className="row">
@@ -38,7 +46,7 @@ class Application extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-8" style={divStyle}>
               <Detail video={this.state.selectedVideo} />
             </div>
             <div className=".col-md-4">

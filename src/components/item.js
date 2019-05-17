@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { style } from 'react-bootstrap';
 const Item = ({video, onVideoSelect}) => {
     const snippet = video.snippet;
     const imageUrl = snippet.thumbnails.default.url;

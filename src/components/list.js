@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Item from './item'
-
+import { style } from 'react-bootstrap';
 const List = (props) => {
   return (
       <ul className="media-list">

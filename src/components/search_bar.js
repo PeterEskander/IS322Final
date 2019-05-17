@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { style } from 'react-bootstrap';
 class SearchBar extends React.Component {
     render() {
         return (

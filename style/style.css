@@ -1,12 +1,14 @@
-
 .media {
-    curoer: pointer;
+  curoer: pointer;
 }
 
 .media:hover {
-    background-color: #ee4d29;
+  background-color: #eee;
 }
 
 .input-group {
-    padding: 20px 0;
+  padding: 20px 0;
+}
+background {
+    color: red;
 }
